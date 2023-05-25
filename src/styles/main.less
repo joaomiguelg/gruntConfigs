@@ -1,9 +1,9 @@
 @pricipalFont: Roboto, sans-serif;
 @tittleFont: Lobster, cursive;
 @textColor: #fff;
-@backgroundColor: #d50e0e;
-@buttonTextColor: #000;
-@buttonBackgroundColor: #f1ecec;
+@backgroundColor: #413ecc;
+@buttonTextColor: #ffffff;
+@buttonBackgroundColor: #df0606;
 
 body {
     background-color: @backgroundColor;
@@ -31,9 +31,14 @@ button {
     font-size: 1.3em;
     margin-top: 16px;
     border-radius: 8px;
+    border: none;
     background-color: @buttonBackgroundColor;
     color: @buttonTextColor;
     font-family: @pricipalFont;
+
+    &:hover {
+        background-color: #df0606cc;
+    }
 
 }
 
@@ -42,9 +47,22 @@ input {
     margin: 16px auto 0;
     font-size: 2em;
     max-width: 120px;
-    border: none;
     background-color: transparent;
     text-align: center;
-    color: #fff;
-    border-bottom: 4px solid #ce2b2b;
+    color: #ffffff;
+    border: none;
+    border-bottom: 3px solid #fff;
+}
+
+.result {
+    padding: 16px;
+    margin-top: 56px;
+    border: 8px dotted #fff;
+    display: none;
+
+    span {
+        font-weight: bold;
+        font-size: 3em;
+        display: block;
+    }
 }
